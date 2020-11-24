@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zim - the Zsh framework with blazing speed and modular extensions.</title>
+  <title>Themes | Zim: Modular, customizable, and blazing fast Zsh framework</title>
 
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -85,13 +85,14 @@
 </nav>
 
   
-<div class="container my-6">
-  <div class="columns is-desktop">
-    <div 
-      class="column is-3-desktop"
-    >
-      <div class="is-sticky-top px-2 pb-4">
-        <!-- Menu sidebar for navigation within the docs -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-marginless is-desktop" style="max-width:100%">
+      <div 
+        class="column is-full-mobile is-3-desktop"
+      >
+        <div class="is-sticky-top px-2 pb-4">
+          <!-- Menu sidebar for navigation within the docs -->
 <aside class="menu">
   
   <p class="menu-label">
@@ -114,6 +115,49 @@
           
         >
           Installation
+        </a>
+      </li>
+    
+      <li>
+        <a 
+          href="/zimfw.sh/docs/FAQ/"
+          
+        >
+          FAQ
+        </a>
+      </li>
+    
+  </ul>
+  
+  <p class="menu-label">
+    Documentation
+  </p>
+  <ul class="menu-list">
+    
+      <li>
+        <a 
+          href="/zimfw.sh/docs/commands/"
+          
+        >
+          Commands
+        </a>
+      </li>
+    
+      <li>
+        <a 
+          href="/zimfw.sh/docs/cheatsheet/"
+          
+        >
+          Cheatsheet
+        </a>
+      </li>
+    
+      <li>
+        <a 
+          href="/zimfw.sh/docs/settings/"
+          
+        >
+          Settings
         </a>
       </li>
     
@@ -145,15 +189,16 @@
   </ul>
   
 </aside>
+        </div>
       </div>
-    </div>
 
-    <div class="column is-9-desktop">
-      <div class="content mx-4">
-        <h1 class="title titled is-1">
-          Themes
-        </h1>
-        <p>Here is a sample of themes. Add <code>zmodule &lt;prompt&gt;</code> to your .zimrc and run <code>zimfw install</code> to enable one of them.</p>
+      <div class="column is-9-desktop">
+        <div class="mx-4">
+          <h1 class="title is-1">
+            Themes
+          </h1>
+          <div class="content">
+            <p>Here is a sample of themes. Add <code>zmodule &lt;prompt&gt;</code> to your .zimrc and run <code>zimfw install</code> to enable one of them.</p>
 <h2>Previews</h2>
 <h3><a href="https://github.com/zimfw/eriner">eriner</a></h3>
 <img width="706" src="https://zimfw.github.io/images/prompts/eriner@2.png">
@@ -167,10 +212,12 @@
 <img width="706" src="https://zimfw.github.io/images/prompts/sorin@2.png">
 <h3><a href="https://github.com/zimfw/steeef">steeef</a></h3>
 <img width="706" src="https://zimfw.github.io/images/prompts/steeef@2.png">
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
+</section>
 
   <!-- Footer w/ copyright info -->
 <footer class="footer">

@@ -87,11 +87,25 @@
   
 <section class="section">
   <div class="container">
-    <div class="columns is-marginless is-desktop" style="max-width:100%">
-      <div 
-        class="column is-full-mobile is-3-desktop"
-      >
-        <div class="is-sticky-top px-2 pb-4">
+    <div class="columns is-marginless is-desktop">
+      <div class="column is-full-touch is-3-desktop">
+        
+        <div class="is-hidden-desktop">
+          <a 
+            role="button"
+            id="sidebarButton"
+            onclick="toggleSidebar()"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        
+        <div id="sidebar" class="is-sticky-top px-2 pb-4 is-hidden-touch">
           <!-- Menu sidebar for navigation within the docs -->
 <aside class="menu">
   
@@ -189,6 +203,7 @@
   </ul>
   
 </aside>
+          <hr class="is-hidden-desktop" />
         </div>
       </div>
 
@@ -219,6 +234,17 @@
   </div>
 </section>
 
+
+  <script>
+    function toggleSidebar() {
+      const sidebarButton = document.getElementById('sidebarButton');
+      const sidebar = document.getElementById('sidebar');
+      sidebarButton.classList.toggle('is-active');
+      sidebar.classList.toggle('is-hidden-touch');
+    }
+  </script>
+
+
   <!-- Footer w/ copyright info -->
 <footer class="footer">
   <div class="content has-text-centered">
@@ -237,6 +263,8 @@
     </a>
   </div>
 </footer>
+
+  
 </body>
 
 </html>

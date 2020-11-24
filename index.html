@@ -86,18 +86,18 @@
 
   
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<style>
-.titled {
-  font-size: 58px !important;
-  line-height: 64px !important;
-}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <style>
+  .titled {
+    font-size: 58px !important;
+    line-height: 64px !important;
+  }
 
-.subtitled {
-  font-size: 22px !important;
-  line-height: 36px !important;
-}
-</style>
+  .subtitled {
+    font-size: 22px !important;
+    line-height: 36px !important;
+  }
+  </style>
 
 
 <!-- Main Hero -->
@@ -151,7 +151,7 @@
             your terminal: <span id="typewriter"></span>
           </h1>
           <h2 class="subtitle subtitled">
-            Zim bundles useful modules, a wide variety of themes, and plenty of customizability into a simple and super fast framweork. 
+            Zim bundles useful modules, a wide variety of themes, and plenty of customizability into a simple and super fast framework. 
           </h2>
           <figure class="image has-shadow">
             <img 
@@ -248,38 +248,38 @@
   </div>
 </section>
 
-<!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
-<script>
-  new Typewriter('#typewriter', {
-    strings: ['super fast', 'working for you', 'powerfully intergrated', 'just how you like it'],
-    autoStart: true,
-    loop: true,
-  });
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    once: true
-  });
-</script>
 
 
-<script>
-  function openTab(evt, tabName) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("content-tab");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.13.1/core.min.js"></script>
+  <script>
+    new Typewriter('#typewriter', {
+      strings: ['super fast', 'working for you', 'powerfully intergrated', 'just how you like it'],
+      autoStart: true,
+      loop: true,
+    });
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
+  <script>
+    function openTab(evt, tabName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("content-tab");
+      for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tab");
+      for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" is-active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " is-active";
     }
-    tablinks = document.getElementsByClassName("tab");
-    for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" is-active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " is-active";
-  }
-</script>
+  </script>
+
 
   <!-- Footer w/ copyright info -->
 <footer class="footer">
@@ -299,6 +299,8 @@
     </a>
   </div>
 </footer>
+
+  
 </body>
 
 </html>
